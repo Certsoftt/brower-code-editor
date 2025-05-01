@@ -1,7 +1,25 @@
 {
   "name": "brower-code-editor",
   "version": "0.1.0",
-  "private": true,
+  "keywords": [
+    "react",
+    "drag and drop",
+    "website builder",
+    "code editor"
+  ],
+  "description": "A browser-code editor that will serve the purpose writing code, cleaning and fixing noisy code, build, edit and deploy web pages",
+  "homepage": "https://github.com/certsoftt/brower-code-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/certsoftt/brower-code-editor.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "bugs": {
+    "url": "https://github.com/certsoftt/brower-code-editor/issues"
+  },
   "dependencies": {
     "cra-template-faztar": "1.0.0",
     "react": "^19.1.0",
@@ -9,10 +27,12 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +71,8 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
+  },
+  "lint-staged": {
+    "*": "pnpm lint"
   }
 }
