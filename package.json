@@ -8,7 +8,7 @@
     "code editor"
   ],
   "description": "A browser-code editor that will serve the purpose writing code, cleaning and fixing noisy code, build, edit and deploy web pages",
-  "homepage": "https://github.com/certsoftt/brower-code-editor",
+  "homepage": "https://certsoftt.github.io/brower-code-editor",
   "repository": {
     "type": "git",
     "url": "https://github.com/certsoftt/brower-code-editor.git"
@@ -44,7 +44,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
