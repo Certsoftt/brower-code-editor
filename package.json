@@ -7,6 +7,7 @@
     "website builder",
     "code editor"
   ],
+  "type": "module",
   "description": "A browser-code editor that will serve the purpose writing code, cleaning and fixing noisy code, build, edit and deploy web pages",
   "homepage": "https://certsoftt.github.io/brower-code-editor",
   "repository": {

@@ -15,10 +15,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>FazTar React-CRA Boilerplate Template</h1>
+      <h1>CodePack Editor - Drag & Drop Website Builder</h1>
       <div className="card">
         <p>
-          <code>Thanks For Choosing To Use FazTar</code>
+          <code>Something cool is cooking</code>
         </p>
       </div>
     </>
